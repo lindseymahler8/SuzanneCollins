@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Suzanne Collins</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link href="../Suzanne/carousel.css" rel="stylesheet">
+<link href="../Suzanne/navbar.css" rel="stylesheet">
+<link href="../Suzanne/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <style>
+        .carousel-item {
+            font-size: 30px;
+            height: 80%;
+        }
+        .carousel-caption {
+            border-radius: 10px;
+            opacity: 70%;
+        }
+        .column {
+            width: 50%;
+            padding: 50px;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            display: table;
+            clear: both;
+            background-color: #000;
+        }
+        .column-header {
+            text-align: center;
+            color: #5988b2;
+            padding: 20px;
+        }
+        .books {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #000;
+            padding: 20px;
+            color:white;
+        }
+        .books-text {
+          color: #fff;
+          font-size: 12px;
+        }
+        .banner {
+            background-color: #E66E35;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .column-text {
+           text-align: center;
+            color: #fff;
+        }
+        .icons a{
+            cursor: pointer;
+            border-radius: 2px;
+            color: #E66E35;
+            font-size:60px;
+            text-shadow:1px 2px 2px #fff;
+            text-align: center;
+            line-height: 35px;
+            padding-right: 10px;
+        }
+        .container-marketing {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .card {
+           border: 4px;
+           background-color: #000;
+           padding: 10px;
+            border-style: solid;
+            border-color: #E66E35;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+        footer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(230px, auto);
+          justify-content: center;
+          background-color: #E66E35;
+          color: white;
+        }
+        .footer-left {
+            text-align: left;
+            padding: 10px;
+        }
+        .footer-right {
+            text-align: right;
+            padding: 10px;
+        }
+        .footer-icons {
+            margin-top: 10px;
+        }
+        .footer-icons a {
+            cursor: pointer;
+            color: white;
+            font-size:30px;
+            text-shadow:2px 2px 3px #000;
+            text-align: center;
+            line-height: 35px;
+        }
+        .bs-example{
+    	      margin: 150px 50px;
+            color: #E66E35;
+        }
+        .btn btn-info {
+            color: #E66E35;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          height:100%;
+          box-sizing: border-box;
+          transition: .5s ease;
+          background-color: black;
+        }
+        .overlay3 {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          height:100%;
+          box-sizing: border-box;
+          transition: .5s ease;
+          background-color: black;
+          text-align:center;
+        }
+        .card-group:hover .overlay {
+          opacity: 0.9;
+        }
+        .text {
+          color: #fff;
+          font-size: 16px;
+        }
+        .review {
+          background-color: #000;
+          align-content: center;
+        }
+          
+    
+    </style>
+    
+  </head>
+  <body>
+    
+<main>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/Hungerpin.jpg" height="70" width="70" alt="main logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="works.html">Works</a>
+            </li>
+        </ul>
+        <form>
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/headerhunger.jpeg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block" style="background-color: #000">
+        <h5>#1 USA Today, New York Times, Wall Street Journal, &amp; Publishers Weekly Bestseller</h5>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/suzannecollins.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block" style="background-color: #000">
+        <h5>#1 USA Today, New York Times, Wall Street Journal, &amp; Publishers Weekly Bestseller</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/katness.jpeg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block" style="background-color: #000">
+        <h5>#1 USA Today, New York Times, Wall Street Journal, &amp; Publishers Weekly Bestseller</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</main>
+<div class="banner">
+    <div class="col lg-12">
+        <h1>The Hunger Games</h1>
+    </div>
+</div>
+<div class="books">
+      <div class="col-xs-6">
+          <img src="images/hungergames.jpeg" class="card-img-top" alt="hgbook" style="width: 60%; align-content: center;">
+          <br>
+          <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+      </div>
+      <div class="col-xs-6">
+          <div class="column-text" style="float:right">
+            <img src="images/fourhalfstars.png" alt="hgRating" style="width: 80%">
+            <p class="books-text">Katniss is a 16-year-old girl living with her mother and younger sister in the poorest district of Panem, the remains of what used be North America. Long ago the districts waged war on the Capitol and were defeated. As part of the surrender terms, each district agreed to send one boy and one girl to appear in an annual televised event called, "The Hunger Games." The terrain, rules, and level of audience participation may change but one thing is constant: kill or be killed. When her sister is chosen by lottery, Katniss steps up to go in her place.</p>
+          </div>
+      </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Catching Fire</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/catchingfire.jpeg" class="card-img-top" alt="hgbook2" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourstar.png" alt="hg2Rating" style="width: 80%">
+          <p class="books-text">Much to her shock, Katniss has fueled an unrest she's afraid she cannot stop. And what scares her more is that she's not entirely convinced she should try. As time draws near for Katniss and Peeta to visit the districts on the Capitol's cruel Victory Tour, the stakes are higher than ever. If they can't prove, without a shadow of a doubt, that they are lost in their love for each other, the consequences will be horrifying.</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Mockingjay</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/mockingjay.jpeg" class="card-img-top" alt="hgbook3" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourstar.png" alt="hg3Rating" style="width: 80%">
+          <p class="books-text">Katniss Everdeen, girl on fire, has survived, even though her home has been destroyed. There are rebels. There are new leaders. A revolution is unfolding.</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>The Ballad of Songbirds and Snakes</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/songbird.jpeg" class="card-img-top" alt="hgbook4" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourhalfstars.png" alt="hg4Rating" style="width: 80%">
+          <p class="books-text">Set in the universe of The Hunger Games before the first three novels took place, follows Coriolanus Snow, who is chosen to mentor a tribute in the upcoming 10th Hunger Games. He is assigned the District 12 tribute, Lucy Gray Baird, who sparks the Capitol's attention after singing during the reaping.</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Gregor the Overlander</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/gregoutlander.jpeg" class="card-img-top" alt="go1book" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourhalfstars.png" alt="go1Rating" style="width: 80%">
+          <p class="books-text">Meet Gregor, a kid from New York City, who falls out of his laundry room into a fantastical subterranean world called the Underland. Accompanied by his toddler sister, Boots, he encounters giant talking creatures-- cockroaches, bats, spiders and rats--and an unusual society of humans. And they’re all expecting him...</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Gregor and the Prophecy of Bane</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/profacyofbane.jpeg" class="card-img-top" alt="go2book" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/threestar.png" alt="go2Rating" style="width: 80%">
+          <p class="books-text">When giant roaches kidnap Boots and spirit her back to the Underland, Gregor follows to retrieve her. Soon he discovers that they are both implicated in “The Prophecy of Bane,” which warns of the dangers of a terrifying white rat. Guess whose job it is to destroy it?</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Gregor and the Curse of the Warmbloods</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/warmbloods.jpeg" class="card-img-top" alt="go3book" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourstar.png" alt="go3Rating" style="width: 80%">
+          <p class="books-text">Gregor and Boots must return to the Underland to help find a cure for a deadly plague called the Curse of the Warmbloods. Gregor is desperate to succeed because, along with several of his Underland friends, a member of his own family is stricken. </p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Gregor and the Marks of Secret</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/marksofsecret.jpeg" class="card-img-top" alt="go4book" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/threehalfstar.png" alt="go4Rating" style="width: 80%">
+          <p class="books-text">Gregor sets out to solve a mystery involving the Underland mice and ends up discovering a terrible secret. This book leads right into the fifth and final book of the series, "Gregor and the Code of Claw."</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Gregor and the Code of Claw</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/codeofclaw2.jpeg" class="card-img-top" alt="go5book" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourhalfstars.png" alt="go5Rating" style="width: 80%">
+          <p class="books-text">Everyone in the Underland has been taking great pains to keep The Prophecy of Time from Gregor. Gregor knows it must say something awful but he never imagined just how awful: It calls for the warrior's death. Now, with an army of rats approaching, and his mom and sister still in Regalia, Gregor the warrior must gather up his courage to help defend Regalia and get his family home safely. The entire existence of the Underland is in Gregor's hands, and time is running out. There is a code to be cracked, a mysterious new princess, Gregor's burgeoning dark side, and a war to end all wars.</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>When Charlie McButton Lost Power</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/lostpower.jpeg" class="card-img-top" alt="mcbutton" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/fourstar.png" alt="mcbuttonRating" style="width: 80%">
+          <p class="books-text">When a thunderstorm knocks out the electricity, Charlie McButton's whole tech empire comes tumbling down. He needs batteries–FAST. But the only batteries are inside his baby sister's beloved talking doll. Will he resort to desperate measures, and cause his sister to have a meltdown of her own? Or will he snap out of his computer craze long enough to realize sisters can be fun, even without batteries?</p>
+        </div>
+    </div>
+</div>
+<div class="banner">
+  <div class="col lg-12">
+      <h1>Year of the Jungle</h1>
+  </div>
+</div>
+<div class="books">
+    <div class="col-xs-6">
+        <img src="images/yearof.jpeg" class="card-img-top" alt="yearofjungle" style="width: 60%; align-content: center;">
+        <br>
+        <button type="button" class="btn btn-outline-light" style="width: 60%; align-content: center;">Order Now</button>
+    </div>
+    <div class="col-xs-6">
+        <div class="column-text" style="float:right">
+          <img src="images/threestar.png" alt="yearofjungleRating" style="width: 80%">
+          <p class="books-text">When Suzy's father is called to war in a faraway jungle, she struggles to deal with his absence.</p>
+        </div>
+    </div>
+</div>
+<div class="review"> 
+  <div class="col-12">
+    <img src="images/ratings.png" alt="ratings" style="width:80%;">
+  </div>
+</div>
+
+<br>
+<footer>
+            <div class="footer-left">
+                <h3>Suzanne Collins</h3>
+                <p>Author</p>  
+            </div>
+            <div class="footer-right">
+                <p>&copy; Suzanne Collins</p> 
+                <p>Email: suzannecollins@yahoo.com</p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/lindsey.mahler.5"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lindsey_mmahler/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lindsey-mahler/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxF4svjG89U1Z0Iw3em_u_Q"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    <script src="Suzanne/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover'
+    });
+});
+</script>
+  
+      
+  </body>
+</html>
